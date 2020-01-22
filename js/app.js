@@ -1,13 +1,14 @@
 // Enemies class
 var Enemy = function(x ,y , speed) {
 
-     // define variables applied to each of our instances hith,width and img's of bug
+     // define variables applied to each of our instances height, weight and img's of bug
     this.speed = speed;
     this.y= y;
     this.x= x;
    this.sprite = 'images/enemy-bug.png';
-     
+     hi
 };
+
 
 // Update the enemy's position
 Enemy.prototype.update = function(dt) {
