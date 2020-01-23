@@ -6,7 +6,7 @@ var Enemy = function(x ,y , speed) {
     this.y= y;
     this.x= x;
    this.sprite = 'images/enemy-bug.png';
-     hi
+     
 };
 
 
@@ -26,7 +26,7 @@ Enemy.prototype.update = function(dt) {
            player.y < this.y + 60 &&
            60 + player.y > this.y) {
            player.x = 202;
-           player.y = 405;
+           player.y = 400;
        };
   
 
@@ -45,7 +45,7 @@ let Player = function (x, y) {
     this.x = x;
     this.y = y;
 //images for player 
-    this.player = 'images/enemy-bug.png';
+    this.player = 'images/char-boy.png';
     
 }
 
@@ -100,7 +100,7 @@ enemyLocation.forEach(function (lY) {
     allEnemies.push(enemy)
 ;})
 
-let player = new Player(202, 404)
+let player = new Player(202, 400)
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
